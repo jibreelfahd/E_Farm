@@ -1,0 +1,1332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Egona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/dad41bef55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <!--  banner-->
+    <div class="banner relative">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
+          Bountiful Harvest! Reap Savings: Up to 50% off Local Produce & FREE
+          Delivery 🇳🇬
+        </p>
+      </div>
+    </div>
+    <div class="gbl-container">
+      <div class="w-0.5 text-white_smoke"></div>
+      <!--      Header section-->
+      <div class="sticky top-0 z-50 bg-white">
+        <header class="flex justify-between items-center mt-4">
+          <a href="index.html">
+            <img class="w-8" src="images/logo.svg" alt="" />
+          </a>
+          <nav class="flex gap-10 ml-32">
+            <a class="active-link negate-active" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="signup.html">Sign up</a>
+          </nav>
+
+          <div class="flex gap-8 items-center justify-center">
+            <div
+              class="flex items-center gap-8 py-1.5 px-4 m-1.5 bg-white_smoke rounded-md"
+            >
+              <input
+                class="opacity-80 outline-none bg-white_smoke w-full"
+                type="search"
+                placeholder="What are you looking for?"
+              />
+              <button>
+                <i class="fa-brands fa-searchengin"></i>
+              </button>
+            </div>
+            <div
+              class="absolute text-center text-white_smoke text-xs top-2 right-[8.5rem] bg-dark_pastel_green w-4 h-4 rounded-full"
+            >
+              2
+            </div>
+            <a class="inline-block" href="cart.html">
+              <i
+                class="fa-solid fa-cart-shopping color text-pakistan_green"
+              ></i>
+            </a>
+          </div>
+
+          <!--          User account drop down menu-->
+          <div class="text-pakistan_green">
+            <i
+              class="fa-solid fa-user cursor-pointer"
+              onclick="toggleMenu()"
+            ></i>
+
+            <div
+              class="rounded-sm open-menu bg-white_smoke transition-all ease-in-out bg-gradient-to-r from-white_smoke via-white_smoke to-white_smoke absolute top-[100%] right-0 w-72 px-4 py-1"
+              id="subMenu"
+            >
+              <div class="flex flex-col gap-3">
+                <div class="user-info">
+                  <div class="user-info flex items-center justify-between">
+                    <i class="fa-solid fa-user"></i>
+                    <h3 class="text-lg font-bold">Divine Paul</h3>
+                  </div>
+                  <hr class="border-0 bg-slate-600 h-[1px] w-full mt-4 mb-3" />
+
+                  <a
+                    class="flex items-center justify-between my-4 group"
+                    href="account.html"
+                  >
+                    <i
+                      class="fa-regular fa-user text-pakistan_green text-center inline-block w-10 rounded-full p-2 mr-4 bg-slate-200"
+                    ></i>
+                    <p class="w-full group-hover:font-bold">
+                      Manage my account
+                    </p>
+                    <span
+                      class="text-2xl duration-200 group-hover:translate-x-1.5"
+                      >></span
+                    >
+                  </a>
+                  <a
+                    class="flex items-center justify-between my-4 group"
+                    href="account.html"
+                  >
+                    <i
+                      class="fa-solid fa-bag-shopping text-pakistan_green text-center inline-block w-10 rounded-full p-2 mr-4 bg-slate-200"
+                    ></i>
+                    <p class="w-full group-hover:font-bold">My Orders</p>
+                    <span
+                      class="text-2xl duration-200 group-hover:translate-x-1.5"
+                      >></span
+                    >
+                  </a>
+                  <a
+                    class="flex items-center justify-between my-4 group"
+                    href="account.html"
+                  >
+                    <i
+                      class="fa-solid fa-xmark text-pakistan_green text-center inline-block w-10 rounded-full p-2 mr-4 bg-slate-200"
+                    ></i>
+                    <p class="w-full group-hover:font-bold">My Cancellations</p>
+                    <span
+                      class="text-2xl duration-200 group-hover:translate-x-1.5"
+                      >></span
+                    >
+                  </a>
+                  <a
+                    class="flex items-center justify-between my-4 group"
+                    href="account.html"
+                  >
+                    <i
+                      class="fa-regular fa-star text-pakistan_green text-center inline-block w-10 rounded-full p-2 mr-4 bg-slate-200"
+                    ></i>
+                    <p class="w-full group-hover:font-bold">My reviews</p>
+                    <span
+                      class="text-2xl duration-200 group-hover:translate-x-1.5"
+                      >></span
+                    >
+                  </a>
+                  <a
+                    class="flex items-center justify-between my-4 group"
+                    href="account.html"
+                  >
+                    <i
+                      class="fa-solid fa-arrow-right-from-bracket text-pakistan_green text-center inline-block w-10 rounded-full p-2 mr-4 bg-slate-200"
+                    ></i>
+                    <p class="w-full group-hover:font-bold">Logout</p>
+                    <span
+                      class="text-2xl duration-200 group-hover:translate-x-1.5"
+                      >></span
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="h-0.5 w-full bg-white_smoke mt-4"></div>
+      </div>
+      <!--      Header section-->
+
+      <!--      line-->
+
+      <!--      Main-->
+      <main>
+        <!--        Hero section-->
+        <section class="flex gap-10 h-344 mt-8 items-start">
+          <ul class="flex gap-4 flex-col w-217 list-none">
+            <li><a href="#">Livestock</a></li>
+            <li><a href="#">Fruits</a></li>
+            <li><a href="#">Tubers</a></li>
+            <li><a href="#">Grains</a></li>
+            <li><a href="#">Vegetables</a></li>
+            <li><a href="#">Cash Crops</a></li>
+            <li><a href="#">Farm Tools</a></li>
+            <li><a href="#">Fertilizers</a></li>
+            <li><a href=""></a></li>
+          </ul>
+          <!--          line-->
+          <div class="h-344 w-0.5 bg-white_smoke"></div>
+
+          <!--          Slide show-->
+          <div class="flex w-892 h-344 ml-auto">
+            <section class="bg-pakistan_green h-344 p-8 rounded-l-lg ml-auto">
+              <div class="h-344 flex flex-col justify-center">
+                <div class="flex gap-4">
+                  <h2 class="text-white_smoke text-2xl mb-2">Our products</h2>
+                  <i
+                    class="fa-solid fa-wheat-awn text-2xl text-white_smoke fa-beat-fade"
+                  ></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white_smoke">
+                  Up to 10% off vouchers!
+                </h3>
+
+                <div class="flex gap-4 items-center">
+                  <a
+                    class="border-b-2 inline w-20 mt-2 border-dark_pastel_green text-white_smoke"
+                    href="#"
+                    >Shop Now</a
+                  >
+                  <i
+                    class="fa-solid mt-4 text-white_smoke fa-arrow-right fa-fade"
+                  ></i>
+                </div>
+              </div>
+            </section>
+            <section class="slideshow-container">
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">1 / 6</div>
+                <div class="w-498 h-344 rounded-r-lg">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/avocados-882635_640.jpg"
+                  />
+                </div>
+                <div class="text">Avocoados</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">2 / 6</div>
+                <div class="w-498 h-344 rounded-r-lg">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/berries-2277_640.jpg"
+                  />
+                </div>
+                <div class="text">Berries</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">3 / 6</div>
+                <div class="w-498 h-34 rounded-r-lg4">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/sheep-4810513_640.jpg"
+                  />
+                </div>
+                <div class="text">Sheep</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">4 / 6</div>
+                <div class="w-498 h-344 rounded-r-lg">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/chicken-4145198_640.jpg"
+                  />
+                </div>
+                <div class="text">Chicken</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">5 / 6</div>
+                <div class="w-498 h-344 rounded-r-lg">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/cabbage-3722517_640.jpg"
+                  />
+                </div>
+                <div class="text">Cabbage</div>
+              </div>
+
+              <div class="mySlides w-498 fade">
+                <div class="numbertext">6 / 6</div>
+                <div class="w-498 h-344 rounded-r-lg">
+                  <img
+                    class="h-344 w-498 rounded-r-lg"
+                    src="images/turkey-1071392_640.jpg"
+                  />
+                </div>
+                <div class="text">Turkey</div>
+              </div>
+              <br />
+
+              <div class="items-center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <!--        Product section-->
+        <div class="relative mt-52">
+          <div
+            class="text-xs text-center p-2 bg-dark_pastel_green w-5 h-12 z-10 absolute left-0 top-[-3rem]"
+          >
+            <span class="ml-8 my-auto font-bold text-dark_pastel_green"
+              >Today's</span
+            >
+          </div>
+          <h2 class="py-10 font-bold text-2xl">For you</h2>
+          <section class="flex justify-between">
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-25%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/watermelons-2636_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦27000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦36000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+
+            <!--          Soya bean products-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-10%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/soy-bean-4994576_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Soya Beans</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦7650
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦8500</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(100%)</span>
+              </div>
+            </div>
+
+            <!--          Goat product-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/goat-4366206_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Health Goat</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦2000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦25000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(80%)</span>
+              </div>
+            </div>
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/cucumbers-849269_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Fresh Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦3000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦4000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="my-16 mx-auto w-60">
+          <a
+            class="text-white_smoke py-3 z-20 rounded-lg px-8 bg-dark_pastel_green font-bold"
+            href="#"
+            >View all Products</a
+          >
+        </div>
+        <div class="w-full my-16 h-1 bg-white_smoke"></div>
+
+        <!--    Categories section-->
+        <!--        TODO: Fix margin issue-->
+        <div class="mt-52 relative flex justify-between gap-2">
+          <div
+            class="text-xs text-center p-2 bg-dark_pastel_green w-5 h-12 z-10 absolute left-0 top-[-6rem]"
+          >
+            <span
+              class="ml-8 flex items-center my-auto font-bold text-dark_pastel_green"
+              >Categories</span
+            >
+          </div>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/cabbage-3722517_640.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Vegetables</h3>
+            </div>
+          </section>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/corn-1515903_640.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Grains</h3>
+            </div>
+          </section>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/sheep-4810513_640.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Livestock</h3>
+            </div>
+          </section>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/chicken-4145198_640.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Poultry</h3>
+            </div>
+          </section>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/cocoa-yam.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Tubers</h3>
+            </div>
+          </section>
+          <section
+            class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
+          >
+            <div
+              class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
+            >
+              <a href="#">
+                <img
+                  class="w-24 h-24 rounded-lg"
+                  src="images/pineapple-3808963_640.jpg"
+                  alt=""
+                />
+              </a>
+
+              <h3 class="font-bold">Fruits</h3>
+            </div>
+          </section>
+        </div>
+        <!--        Top Products-->
+        <div class="relative mt-52">
+          <div
+            class="text-xs mb-20 text-center p-2 bg-dark_pastel_green w-5 h-12 z-10 absolute left-0 top-[-3rem]"
+          >
+            <span class="ml-8 my-auto font-bold text-dark_pastel_green"
+              >New</span
+            >
+          </div>
+          <div class="flex w-full justify-between items-center mb-4">
+            <h2 class="py-10 font-bold text-2xl">Top Products</h2>
+            <div class="w-60">
+              <a
+                class="text-white_smoke py-3 z-20 rounded-lg px-8 bg-dark_pastel_green font-bold"
+                href="#"
+                >View all Products</a
+              >
+            </div>
+          </div>
+          <section class="flex justify-between">
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-25%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/turkey-1071392_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Turkey</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦27000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦36000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+
+            <!--          Chicken products-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-10%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/chicken-4145198_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Chicken</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦7650
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦8500</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(100%)</span>
+              </div>
+            </div>
+
+            <!--          Goat product-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/goat-4366206_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Healthy Goat</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦2000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦25000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(80%)</span>
+              </div>
+            </div>
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/pineapple-3808963_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Pineapple</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦3000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦4000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+          </section>
+          <div class="w-full my-16 h-1 bg-white_smoke"></div>
+        </div>
+
+        <!--        Product card Section-->
+        <section
+          class="flex justify-center items-center w-full bg-pakistan_green mb-16 rounded-lg"
+        >
+          <div class="w-2/4 text-white_smoke">
+            <div class="w-3/4 mx-auto">
+              <h2 class="font-bold text-4xl">
+                Enhance Your Shopping Experience
+              </h2>
+              <p class="mt-4">Shopping made relatively easy for you</p>
+              <button class="bg-dark_pastel_green mt-4 py-1.5 px-6">
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <div class="w-2/4">
+            <img
+              class="h-[450px] bg-pakistan_green"
+              src="images/product-card-removebg-preview.png"
+            />
+          </div>
+        </section>
+
+        <!--        Explore product sections-->
+        <div class="relative mt-52">
+          <div
+            class="text-xs text-center p-2 bg-dark_pastel_green w-5 h-12 z-10 absolute left-0 top-[-3rem]"
+          >
+            <span class="ml-8 my-auto font-bold text-dark_pastel_green"
+              >Products</span
+            >
+          </div>
+          <h2 class="py-10 font-bold text-2xl">Explore Our Products</h2>
+          <section class="flex flex-wrap justify-between">
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-25%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/watermelons-2636_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦27000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦36000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+
+            <!--          Soya bean products-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-10%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/soy-bean-4994576_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Soya Beans</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦7650
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦8500</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(100%)</span>
+              </div>
+            </div>
+
+            <!--          Goat product-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/goat-4366206_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Health Goat</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦2000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦25000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(80%)</span>
+              </div>
+            </div>
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/cucumbers-849269_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Fresh Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦3000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦4000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="flex flex-wrap mt-16 justify-between">
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-25%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/watermelons-2636_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦27000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦36000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+
+            <!--          Soya bean products-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-10%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/soy-bean-4994576_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Soya Beans</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦7650
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦8500</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(100%)</span>
+              </div>
+            </div>
+
+            <!--          Goat product-->
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/goat-4366206_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Health Goat</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦2000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦25000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(80%)</span>
+              </div>
+            </div>
+            <div class="card rounded-lg overflow-hidden">
+              <div>
+                <a
+                  class="w-270 h-250 bg-white_smoke overflow-hidden mb-0 flex flex-col relative justify-start items-center hide rounded-lg"
+                  href="#"
+                >
+                  <span
+                    class="text-xs text-center flex p-2 bg-dark_pastel_green w-10 h-8 absolute left-0 top-0"
+                    >-20%</span
+                  >
+                  <img
+                    class="w-160 h-160 my-auto hover:h-40 hover:w-36 rounded-lg"
+                    src="images/cucumbers-849269_640.jpg"
+                    alt=""
+                  />
+                </a>
+                <div class="rounded-b-lg overflow-hidden">
+                  <button
+                    class="hidden w-full text-white_smoke bg-pakistan_green ext-white_smoke py-1.5 addToCartButton"
+                  >
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              <div>
+                <h2 class="font-bold">Fresh Cucumber</h2>
+              </div>
+              <p class="text-sm text-dark_pastel_green">
+                ₦3000
+                <span class="mr-2 line-through opacity-70 text-slate-500"
+                  >₦4000</span
+                >
+              </p>
+
+              <div>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <i class="fa-solid fa-star text-yellow-700"></i>
+                <span class="font-bold opacity-60">(77%)</span>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="my-16 mx-auto w-60">
+          <a
+            class="text-white_smoke py-3 z-20 rounded-lg px-8 bg-dark_pastel_green font-bold"
+            href="#"
+            >View all Products</a
+          >
+        </div>
+        <div class="w-full my-16 h-1 bg-white_smoke"></div>
+
+        <!--        New Arrivals-->
+        <div class="relative mt-52">
+          <div
+            class="text-xs text-center p-2 bg-dark_pastel_green w-5 h-12 z-10 absolute left-0 top-[-3rem]"
+          >
+            <span class="ml-8 my-auto font-bold text-dark_pastel_green"
+              >Featured</span
+            >
+          </div>
+          <h2 class="py-10 font-bold text-2xl">New Arrival</h2>
+          <section class="h-500 flex gap-6 my-16">
+            <!--            Cow section-->
+            <div
+              class="w-2/4 h-full flex gap-6 px-6 items-center bg-pakistan_green rounded-lg"
+            >
+              <a class="w-[300px]" href="#">
+                <img class="rounded-l w-[300px]" src="images/cow.png" alt="" />
+              </a>
+              <div>
+                <h2 class="text-white_smoke text-lg">Healthy Cow</h2>
+                <p class="text-white_smoke text-xs">
+                  Healthy and affordable cow available for you
+                </p>
+
+                <button class="bg-dark_pastel_green rounded-lg mt-6 py-1.5 p-6">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="gap-6 flex flex-col h-full p-8 bg-pakistan_green rounded-lg"
+            >
+              <div class="flex flex-col-reverse">
+                <img class="" src="images/catfish.png" alt="" />
+                <div>
+                  <h2 class="text-lg text-white_smoke">
+                    Beautiful and cheap Catfish for you
+                  </h2>
+                  <button
+                    class="bg-dark_pastel_green rounded-lg mt-4 py-1.5 p-6"
+                  >
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="my-32 flex justify-between items-center w-4/5 mx-auto">
+          <div
+            class="text-black py-3 px-[22px] rounded-md flex flex-col justify-center items-center"
+          >
+            <img class="" src="images/Frame-7.png" alt="" />
+            <h1 class="mt-2 mb-1 font-bold">MONEY BACK GUARANTEE</h1>
+            <p>We return money within 10 days</p>
+          </div>
+
+          <div
+            class="text-black p-3 rounded-md flex flex-col justify-center items-center"
+          >
+            <img class="" src="images/Frame-5.png" alt="" />
+            <h1 class="mt-2 mb-1 font-bold">FAST DELIVERY</h1>
+            <p>Fast delivery for all orders</p>
+          </div>
+
+          <div
+            class="text-black p-3 rounded-md flex flex-col justify-center items-center"
+          >
+            <img class="" src="images/Frame-6.png" alt="" />
+            <h1 class="mt-2 mb-1 font-bold">24/7 CUSTOMER SERVICE</h1>
+            <p>Friendly 24/7 customer support</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--    Footer-->
+    <footer class="footer"></footer>
+
+    <!--  Script-->
+    <script>
+      const card = document.querySelector("hide");
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach((card) => {
+        const addToCartButton = card.querySelector(".addToCartButton");
+        const cardImage = card.querySelector(".card img");
+
+        let hoverTimeout;
+
+        const transitionDuration = "300ms"; // Adjust the duration as needed
+
+        card.addEventListener("mouseenter", () => {
+          clearTimeout(hoverTimeout);
+          hoverTimeout = setTimeout(() => {
+            addToCartButton.classList.remove("hidden");
+            cardImage.style.transform = "scale(1.1)";
+            addToCartButton.style.transform = "scale(1.1)";
+            card.style.transition = `transform ${transitionDuration} ease, box-shadow ${transitionDuration} ease`;
+          }, 300); // Adjust the delay as needed
+        });
+
+        card.addEventListener("mouseleave", () => {
+          clearTimeout(hoverTimeout);
+          hoverTimeout = setTimeout(() => {
+            addToCartButton.classList.add("hidden");
+            cardImage.style.transform = "scale(1)";
+            addToCartButton.style.transform = "scale(1)";
+            card.style.transition = `transform ${transitionDuration} ease, box-shadow ${transitionDuration} ease`;
+          }, 300); // Adjust the delay as needed
+        });
+
+        // Set a fixed width for the image
+        cardImage.style.width = "160px"; // Adjust the width as needed
+      });
+
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      let subMenu = document.getElementById("subMenu");
+
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+      <!--      Toggle Menu-->
+    </script>
+
+    <script src="createFooter.js"></script>
+  </body>
+</html>

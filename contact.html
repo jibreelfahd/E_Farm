@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Egona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dad41bef55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <!--  banner-->
+    <div class="banner">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
+          Bountiful Harvest! Reap Savings: Up to 50% off Local Produce & FREE
+          Delivery 🇳🇬
+        </p>
+      </div>
+    </div>
+    <div class="gbl-container">
+      <div class="w-0.5 text-white_smoke"></div>
+      <!--      Header section-->
+      <div class="navBar sticky top-0 z-50 bg-white"></div>
+      <div class="flex justify-center items-center gap-20 mb-8 mt-20">
+        <div class="px-8 py-5 shadow-md rounded-md">
+          <div class="call">
+            <div class="w-full flex items-center justify-start gap-2">
+              <div
+                class="flex justify-center items-center bg-green-600 h-8 w-8 rounded-full"
+              >
+                <img class="h-4 w-4" src="images/phone-image.svg" alt="" />
+              </div>
+              <p>Call To Us</p>
+            </div>
+            <p class="pb-2 pt-4">We are available 24/7, 7 days a week.</p>
+            <p class="pb-5">Phone: +8801611112222</p>
+          </div>
+
+          <div class="h-[1.5px] bg-slate-400 mb-3"></div>
+
+          <div class="sendsms">
+            <div class="pt-2 pb-4 flex items-center justify-start gap-2">
+              <div
+                class="flex justify-center items-center bg-green-600 h-8 w-8 rounded-full"
+              >
+                <img class="h-4 w-4" src="images/email-image.svg" alt="" />
+              </div>
+              <p class="">Write To Us</p>
+            </div>
+            <p class="pb-2 max-w-[20rem]">
+              Fill out our form and we will contact you within 24 hours.
+            </p>
+            <p class="pb-2">Emails: customer@exclusive.com</p>
+            <p class="pb-4">Emails: support@exclusive.com</p>
+          </div>
+          <!--  -->
+        </div>
+        <div class="input_d all-product">
+          <form class="px-8 py-5 shadow-md rounded-md" action="/contact_post">
+            <div class="flex justify-center items-center gap-8 mb-7">
+              <input
+                class="bg-input_color p-2 rounded-md focus:outline-none"
+                type="text"
+                placeholder="Your Name *"
+                required
+                name="names"
+              />
+              <input
+                class="bg-input_color p-2 rounded-md focus:outline-none"
+                type="email"
+                placeholder="Your Email *"
+                required
+                name="email"
+              />
+              <input
+                class="bg-input_color p-2 rounded-md focus:outline-none"
+                type="text"
+                placeholder="Phone *"
+                required
+                name="phone"
+              />
+            </div>
+            <textarea
+              class="bg-input_color focus:outline-none resize-none border rounded-md w-full h-44 p-2"
+              placeholder="Your Message"
+              name="message"
+            ></textarea>
+          </form>
+          <div class="name error" style="color: red;"></div>
+          <div class="phone error" style="color: red;"></div>
+          <div class="email error" style="color: red;"></div>
+          <div class="message error" style="color: red;"></div>
+          <div class="success" style="color: green;"></div>
+          <button class="btn ml-auto mt-3 mb-[22px]">Send Message</button>
+          <div class="errors"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-footer_color h-80 flex items-center content-center">
+      <div class="text-white font-body w-full flex justify-evenly">
+        <div class="">
+          <h1 class="pb-3 font-medium text-[20px]">Exclusive</h1>
+          <h2 class="pb-3 text-[15px]">Subscribe</h2>
+          <p class="pb-3 text-[13px]">Get 10% off your first order</p>
+          <div
+            class="flex items-center content-center gap-5 border-2 border-stone-50 rounded-md py-1 px-2"
+          >
+            <p class="text-[13px] text-slate-200">Enter your email</p>
+            <img src="images/icon-send.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="w-60">
+          <h1 class="pb-3 font-medium text-[20px]">Support</h1>
+          <h2 class="pb-3 text-[15px]">
+            111 Taen Business Complex, Nhub Nigeria, Jos, Plateau State.
+          </h2>
+          <p class="pb-3 text-[13px]">contactegona@gmail.com</p>
+          <p class="pb-3 text-[13px]">+234 8085499803</p>
+        </div>
+
+        <div class="">
+          <h1 class="pb-3 font-medium text-[20px]">Account</h1>
+          <h2 class="pb-3 text-[15px]">My Account</h2>
+          <h2 class="pb-3 text-[15px]">Login / Register</h2>
+          <h2 class="pb-3 text-[15px]">Cart</h2>
+          <h2 class="pb-3 text-[15px]">Wishlist</h2>
+          <h2 class="pb-3 text-[15px]">Shop</h2>
+        </div>
+
+        <div class="">
+          <h1 class="pb-3 font-medium text-[20px]">Quick Link</h1>
+          <h2 class="pb-3 text-[15px]">Privacy Policy</h2>
+          <h2 class="pb-3 text-[15px]">Terms Of Use</h2>
+          <h2 class="pb-3 text-[15px]">FAQ</h2>
+          <h2 class="pb-3 text-[15px]">Contact</h2>
+        </div>
+
+        <div class="">
+          <h1 class="pb-3 font-medium text-[20px]">Download App</h1>
+          <h2 class="pb-3 text-[15px]">
+            Save 1,000 naira with App New User Only
+          </h2>
+          <div class="pb-3 flex gap-3 justify-start items-center">
+            <div>
+              <img src="images/Qrcode 1.png" alt="" />
+            </div>
+            <div>
+              <img class="mb-2" src="images/googleplay.png" alt="" />
+              <img src="images/appplay.png" alt="" />
+            </div>
+          </div>
+          <div class="flex gap-5">
+            <img src="images/facebbok.svg" alt="" />
+            <img src="images/twitter.svg" alt="" />
+            <img src="images/insta.svg" alt="" />
+            <img src="images/linkin.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <p
+      class="flex justify-center items-center text-white py-3 bg-footer_color border-t-2 border-white"
+    >
+      &copy Copyright e-gona 2022. All right reserved
+    </p>
+
+    <script src="nav.js"></script>
+    <script src="js/addToCart.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

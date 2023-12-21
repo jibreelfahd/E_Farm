@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Egona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body class="">
+    <!--  banner-->
+    <div class="banner">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
+          Bountiful Harvest! Reap Savings: Up to 50% off Local Produce & FREE
+          Delivery 🇳🇬
+        </p>
+      </div>
+    </div>
+
+    <div class="gbl-container">
+      <div class="w-0.5 text-white_smoke relative"></div>
+      <!--      Header section-->
+      <div class="navBar sticky top-0 z-50 bg-white"></div>
+      <!--      Header section-->
+
+      <h2 class="font-bold font-body text-[30px] mx-28 mt-10">
+        Billing Details
+      </h2>
+
+      <div class="flex justify-around items-start mx-8 my-4 mb-24">
+        <form action="get">
+          <div class="mb-8">
+            <p class="mb-1">First Name*</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+              required
+            />
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-1">Company Name</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+            />
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-1">Street Address*</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+              required
+            />
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-1">Apartment, floor, etc. (optional)</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+            />
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-1">Town/City*</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+              required
+            />
+          </div>
+
+          <div class="mb-8">
+            <p class="mb-1">Phone Number*</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="text"
+              required
+            />
+          </div>
+
+          <div class="mb-1">
+            <p class="mb-1">Email Address*</p>
+            <input
+              class="bg-input_color p-2 rounded-sm focus:outline-none w-[20rem]"
+              type="email"
+              required
+            />
+          </div>
+
+          <div class="flex justify-center items-center align-middle gap-1 mt-3">
+            <input type="checkbox" />
+            <p>Save this information for faster check-out next time</p>
+          </div>
+        </form>
+        <!-- form-side -->
+        <div class="">
+          <div class="flex justify-between items-center mb-6">
+            <div class="flex justify-center items-center gap-3">
+              <img class="h-[50px] rounded-lg" src="images/tmt.jpg" alt="" />
+              <p>Tomato</p>
+            </div>
+            <p>650 naira</p>
+          </div>
+
+          <div class="flex justify-between items-center mb-6">
+            <div class="flex justify-center items-center gap-3">
+              <img class="h-[50px] rounded-lg" src="images/onn.jpg" alt="" />
+              <p>Onion</p>
+            </div>
+            <p>650 Naira</p>
+          </div>
+
+          <div class="flex justify-between items-center pb-4 border-b-[2px]">
+            <p>Subtotal:</p>
+            <p>1,300 naira</p>
+          </div>
+
+          <div
+            class="mt-3 flex justify-between items-center pb-4 border-b-[2px]"
+          >
+            <p>Shipping:</p>
+            <p>Free</p>
+          </div>
+
+          <div
+            class="mt-3 flex justify-between items-center pb-4 border-b-[2px]"
+          >
+            <p>Total:</p>
+            <p>1,300 naira</p>
+          </div>
+
+          <div class="mt-10 mb-1 flex justify-between items-center">
+            <div class="flex justify-center gap-2">
+              <input type="radio" name="payment_method" />
+              <p>Bank</p>
+            </div>
+
+            <div class="flex items-center justify-center gap-2">
+              <img src="images/i-1.svg" alt="" />
+              <img src="images/i-2.svg" alt="" />
+              <img src="images/1-3.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="mb-4 flex justify-start items-center gap-2">
+            <input type="radio" name="payment_method" />
+            <p>Cash on delivery</p>
+          </div>
+
+          <div class="flex justify-center items-center gap-8">
+            <h2 class="pl-4 pr-32 py-1 border-2 rounded-md">Coupon Code</h2>
+            <button
+              class="px-5 py-[5px] w-36 bg-green-600 align-middle rounded-md text-white"
+            >
+              Apply Coupon
+            </button>
+          </div>
+
+          <button
+            class="mt-7 px-5 py-1.5 w-36 bg-green-600 align-middle rounded-md text-white"
+          >
+            Place Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+    <script src="createFooter.js"></script>
+    <script src="nav.js"></script>
+    <script src="js/addToCart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Egona</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dad41bef55.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="public/styles.css" />
+  </head>
+  <body>
+    <!--  banner-->
+    <div class="banner">
+      <div class="flex">
+        <p class="text-white w-4/5 mx-auto text-center py-3">
+          Bountiful Harvest! Reap Savings: Up to 50% off Local Produce & FREE
+          Delivery 🇳🇬
+        </p>
+      </div>
+    </div>
+    <div class="gbl-container">
+      <!--header-->
+      <div class="w-0.5 text-white_smoke relative"></div>
+      <!--      Header section-->
+      <div class="navBar sticky top-0 z-50 bg-white"></div>
+      <div class="sign-container">
+        <div class="sign-card">
+          <div class="">
+            <img
+              class="md:h-500"
+              src="images/Side Image-login.png"
+              alt="image"
+            />
+          </div>
+          <div class="flex contents-center items-center">
+            <form action="/login">
+              <h1 class="font-inter text-[25px] font-body pb-4">
+                Log in to E-GONA
+              </h1>
+              <p class="text-[16px] font-body pb-2">Enter your details below</p>
+
+              <div class="mb-5">
+                <input
+                  class="p-2 w-64 border-b-2 border-gray-700 outline-none"
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="email error" style="color: red;"></div>
+
+              <div class="mb-5">
+                <input
+                  class="p-2 w-64 border-b-2 border-gray-700 outline-none"
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  required
+                />
+              </div>
+              <div class="password error" style="color: red;"></div>
+
+              <div class="flex justify-center items-center">
+                <button
+                  class="px-5 py-1.5 w-20 bg-green-600 align-middle rounded-md text-white btn"
+                >
+                  Login
+                </button>
+                <a class="px-8 text-green-600" href="reset-password.html"
+                  >Forget Password?</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="error" style="color: red; font-size: 120px;"></div>
+    <footer class="footer"></footer>
+    <script src="createFooter.js"></script>
+    <script src="nav.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/addToCart.js"></script>
+  </body>
+</html>
