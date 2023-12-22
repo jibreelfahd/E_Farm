@@ -15,7 +15,7 @@ const displayCart = cartItems.map(items => {
    class="flex items-center justify-between p-4 custom-shadow my-8 mx-4"
  >
    <div class="flex items-center justify-center gap-3">
-     <img class="rounded-md" src="${productImage}" alt="" />
+     <img class="rounded-md w-20 h-15" src="${productImage}" alt="" />
      <p>${productName}</p>
    </div>
    <p>₦${productPrice}</p>

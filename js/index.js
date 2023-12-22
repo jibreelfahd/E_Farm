@@ -6,7 +6,7 @@ const categoryDOM = document.querySelector('.categories');
 const showForYou = async () => {
    //fetching for you items
    try {
-      const forYouResponse = await fetch('/e-gona/top/deals', {
+      const forYouResponse = await fetch('https://e-gona-mu0h.onrender.com/e-gona/top/deals', {
          method: 'GET',
          headers: { 'Content-Type': 'text/html' }
       });
