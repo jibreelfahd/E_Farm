@@ -42,7 +42,7 @@ btn.addEventListener('click', async(e) => {
     const password = input.newPassword.value;
     const confirmPassword = input.confirmPassword.value;
     
-    const res = await fetch(`https:e-gona-mu0h.onrender.com/e-gona/profile`, {
+    const res = await fetch(`https://e-gona-mu0h.onrender.com/e-gona/profile`, {
       method: 'PATCH',
       body: JSON.stringify({ name, lastName, email, address, password, confirmPassword, currentPassword }),
       headers: { 
