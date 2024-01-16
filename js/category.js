@@ -7,8 +7,7 @@ console.log(categoryName)
 
 const showProducts = async() => {
  try {
-  // https://e-gona-mu0h.onrender.com
-   const res = await fetch(`/e-gona/category/${categoryName}`, {
+   const res = await fetch(`https:e-gona-mu0h.onrender.com/e-gona/category/${categoryName}`, {
       method: 'GET',
       headers: { 'Content-Type': 'text/html' }
    });

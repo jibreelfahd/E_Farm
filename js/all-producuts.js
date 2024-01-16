@@ -3,8 +3,7 @@ const errorDOM = document.querySelector('.error');
 
 const showProducts = async() => {
    try {
-    // https://e-gona-mu0h.onrender.com
-      const res = await fetch('/e-gona/all/products', {
+      const res = await fetch('https:e-gona-mu0h.onrender.com/e-gona/all/products', {
          method: 'GET',
          headers: { 'Content-Type': 'text/html' }
       });

@@ -13,8 +13,7 @@ btn.addEventListener('click', async (e) => {
    emailError.textContent = ''
    passwordError.textContent = ''
 
-   // https://e-gona-mu0h.onrender.com
-   const res = await fetch('/e-gona/login', {
+   const res = await fetch('https:e-gona-mu0h.onrender.com/e-gona/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' }

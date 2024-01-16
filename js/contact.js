@@ -22,8 +22,7 @@ btn.addEventListener('click', async (e) => {
    successMessage.textContent = '';
 
    try {
-      // https://e-gona-mu0h.onrender.com
-   const res = await fetch('/e-gona/contactus', {
+   const res = await fetch('https:e-gona-mu0h.onrender.com/e-gona/contactus', {
       method: 'POST',
       body: JSON.stringify({ name, email, phoneNumber, messages }),
       headers: { 'Content-Type': 'application/json' }
