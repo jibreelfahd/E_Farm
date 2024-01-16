@@ -6,7 +6,8 @@ const categoryDOM = document.querySelector('.categories');
 const showForYou = async () => {
    //fetching for you items
    try {
-      const forYouResponse = await fetch('https://e-gona-mu0h.onrender.com/e-gona/top/deals', {
+      // https://e-gona-mu0h.onrender.com
+      const forYouResponse = await fetch('/e-gona/top/deals', {
          method: 'GET',
          headers: { 'Content-Type': 'text/html' }
       });
@@ -97,7 +98,7 @@ const showForYou = async () => {
           class="flex flex-col justify-center rounded-lg overflow-hidden hover:text-white_smoke hover:bg-dark_pastel_green"
         >
           <div
-            class="w-180 h-180 flex flex-col gap-4 justify-center ems-center border-white_smoke border-4 rounded-lg"
+            class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
           >
             <a width="96" href="category.html?selectCategory=Grains">
               <img
@@ -166,7 +167,7 @@ const showForYou = async () => {
           <div
             class="w-180 h-180 flex flex-col gap-4 justify-center items-center border-white_smoke border-4 rounded-lg"
        >
-         <a hrefcategory.html">
+         <a href = "category.html?selectCategory=Fruits">
            <img
              class="w-24 h-24 rounded-lg"
              src="images/pineapple-3808963_640.jpg"

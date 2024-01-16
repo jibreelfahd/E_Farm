@@ -13,7 +13,8 @@ btn.addEventListener('click', async (e) => {
    emailError.textContent = ''
    passwordError.textContent = ''
 
-   const res = await fetch('https://e-gona-mu0h.onrender.com/e-gona/login', {
+   // https://e-gona-mu0h.onrender.com
+   const res = await fetch('/e-gona/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
       headers: { 'Content-Type': 'application/json' }
@@ -22,13 +23,13 @@ btn.addEventListener('click', async (e) => {
    const { error, user, token } = await res.json();
 
    if(error){
-      emailError.textContent = "Incorrect Password";
+      emailError.textContent = error.email;
       passwordError.textContent = error.password
    }
 
    if(user) {
-      document.cookie = `userToken=${token}; expires= 2h; path=/`;
-      window.location.href = 'index.html'
+      document.cookie = `userToken=${token},${user.name}; expires= 2h; path=/`;
+      window.location.href = 'logged-in.html'
    }
    
    } catch (err) {

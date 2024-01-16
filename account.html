@@ -17,10 +17,10 @@
       <div class="navBar sticky top-0 z-50 bg-white"></div>
     </div>
     <div class="flex w-full justify-end pr-28 mt-7">
-      <h2 class="">Welcome <span class="text-green-800">User</span></h2>
+      <h2 class="">Welcome <span class="text-green-800 username"></span></h2>
     </div>
     <!-- g-container -->
-    <div class="flex justify-between items-start mx-28 mt-4">
+    <div class="flex justify-between items-start mx-28 mt-4 all-product">
       <!-- lft -->
       <div class="text-left mt-5">
         <h1 class="text-black font-medium mb-5">Manage My Account</h1>
@@ -81,14 +81,14 @@
             <input
               class="p-2 h-10 w-64 rounded-md bg-input_color outline-none"
               type="text"
-              name="name"
-              placeholder="Khalid"
+              name="names"
+              placeholder="John"
             />
             <input
               class="p-2 h-10 w-64 rounded-md bg-input_color outline-none"
               type="text"
-              name="last-name"
-              placeholder="Rabiu"
+              name="lastname"
+              placeholder="Doe"
             />
           </div>
 
@@ -101,43 +101,47 @@
             <input
               class="p-2 h-10 w-64 rounded-md bg-input_color outline-none"
               type="text"
-              name="name"
-              placeholder="egona-beta@gmail.com"
+              name="email"
+              placeholder="johndoe@gmail.com"
             />
             <input
-              class="p-2 h-10 w-64 rounded-md bg-input_color outline-none"
-              type="text"
-              name="last-name"
-              placeholder="Teen Business complex, Old Bukuru park"
+            class="p-2 h-10 w-64 rounded-md bg-input_color outline-none"
+            type="text"
+            name="address"
+            placeholder="Teen Business complex, Old Bukuru park"
             />
           </div>
+          <div class="email error" style="color: red;"></div>
 
-          <p class="mb-1">Password Changes</p>
+          <p class="mb-1">Password</p>
           <input
             class="p-2 h-10 w-full rounded-md bg-input_color outline-none mb-5"
             type="text"
-            name="name"
-            placeholder="Current Passwod"
+            name="currentPassword"
+            placeholder="Current Password"
+            required
+          />
+          <div class="password error" style="color: red;"></div>
+          <input
+            class="p-2 h-10 w-full rounded-md bg-input_color outline-none mb-5"
+            type="text"
+            name="newPassword"
+            placeholder="New Password"
             required
           />
           <input
             class="p-2 h-10 w-full rounded-md bg-input_color outline-none mb-5"
             type="text"
-            name="name"
-            placeholder="New Passwod"
+            name="confirmPassword"
+            placeholder="Confirm New Password"
             required
           />
-          <input
-            class="p-2 h-10 w-full rounded-md bg-input_color outline-none mb-5"
-            type="text"
-            name="name"
-            placeholder="Confirm New Passwod"
-            required
-          />
+          <div class="errors" style="color: red;"></div>
+          <div class="success" style="color: green;"></div>
           <div class="flex justify-end items-center">
-            <button class="mr-3">Cancel</button>
+            <a href="logged-in.html" class="px-5 py-[5px] rounded-sm bg-red-600">Cancel</a>
             <button
-              class="px-5 py-[5px] w-36 bg-green-600 align-middle rounded-sm text-white"
+              class="px-5 py-[5px] w-36 bg-green-600 align-middle rounded-sm text-white btn"
             >
               Save Changes
             </button>

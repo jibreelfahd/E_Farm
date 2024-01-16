@@ -8,8 +8,6 @@ document.addEventListener('DOMContentLoaded', function () {
        const productPrice = addToCartButton.getAttribute('data-product-price');
        const productImage = addToCartButton.getAttribute('data-product-image');
  
-       console.log(productId, farmerId, productName)
- 
        // Add the product to the cart (you can implement your own logic here)
        addToCart(productId, productName, productPrice, productImage, farmerId);
      }
@@ -47,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
  // Function to update the cart icon
  function updateCartIcon() {
-   const cartIcon = document.querySelector('.fa-cart-shopping');
+   const cartIcon = document.querySelector('.quantity');
    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
  
    // Calculate the total quantity of items in the cart
@@ -56,6 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
    console.log(cartItems.totalPrice)
  
    // Update the cart icon with the total quantity
-   cartIcon.innerHTML = `<div class="absolute text-center text-white_smoke text-xs top-2 right-2 bg-dark_pastel_green w-4 h-4 rounded-full">${totalQuantity}</div>`;
+   cartIcon.textContent = totalQuantity;
  }
  updateCartIcon();

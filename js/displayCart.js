@@ -7,7 +7,6 @@ const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
 
 const displayCart = cartItems.map(items => {
    const { productImage, productName, productPrice, totalPrice } = items;
-   console.log(items)
    total.textContent = totalPrice;
    subtotal.textContent = totalPrice;
    

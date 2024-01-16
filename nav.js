@@ -25,6 +25,7 @@ const createNav = () => {
           <i class="fa-brands fa-searchengin"></i>
         </button>
       </div>
+      <div class="absolute text-center text-white_smoke text-xs top-2 right-2 bg-dark_pastel_green w-4 h-4 rounded-full quantity"></div>
       <a class="inline-block" href="cart.html">
         <i
           class="fa-solid fa-cart-shopping color text-pakistan_green"

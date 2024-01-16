@@ -20,7 +20,8 @@ btn.addEventListener('click', async (e) => {
    passwordError.textContent = ''
 
    try {
-      const res = await fetch('https://e-gona-mu0h.onrender.com/e-gona/signup', {
+      // https://e-gona-mu0h.onrender.com
+      const res = await fetch('/e-gona/signup', {
          method: 'POST',
          body: JSON.stringify({ name, email, password, phoneNumber }),
          headers: { 'Content-Type': 'application/json'}
@@ -35,7 +36,7 @@ btn.addEventListener('click', async (e) => {
       }
 
       if(data.user){
-         window.location.href = 'login.html'
+         window.location.href = 'logged-in.html'
       }
       console.log(data);
    } catch (err) {
